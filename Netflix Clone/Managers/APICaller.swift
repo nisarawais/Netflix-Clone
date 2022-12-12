@@ -34,7 +34,7 @@ class APICaller {
                 
                 completion(.success(results.results))
             }catch{
-                completion(.failure(error))
+                completion(.failure(APIError.failedToGetData))
             }
        
         }
